@@ -1,7 +1,6 @@
 import React from 'react';
 import User from '../containers/User';
 import './Sidebar.css';
-import { contacts } from '../static-data';
 
 const Sidebar = ({ contacts }) => {
 	return (

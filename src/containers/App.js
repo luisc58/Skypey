@@ -6,11 +6,11 @@ import store from '../store';
 import './App.css';
 
 const App = () => {
-	const { contacts } = store.getState();
+	const { contacts, user, activeUserId } = store.getState();
 	return (
 		<div className="App">
 			<Sidebar contacts={Object.values(contacts)} />
-			<Main />
+			<Main user={user} activeUserid={activeUserId} />
 		</div>
 	);
 };
